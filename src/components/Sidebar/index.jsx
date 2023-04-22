@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, NavLink } from 'react-router-dom';
 import './index.scss';
-import LogoS from "../../assets/images/logo-s.png";
+import LogoS from "../../assets/images/R-Logo.png";
 import LogoSubtitile from "../../assets/images/raja.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faTwitch, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
     <div className="nav-bar">
@@ -27,13 +28,13 @@ const Sidebar = () => (
         <ul>
             <li>
                 <a target='_blank' href="">
-                    <FontAwesomeIcon icon={faLinkedin}/>
+                    <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a target='_blank' href="">
-                    <FontAwesomeIcon icon={faGithub}/>
+                    <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a target='_blank' href="">
-                    <FontAwesomeIcon icon={faTwitter}/>
+                    <FontAwesomeIcon icon={faTwitter} />
                 </a>
             </li>
         </ul>
