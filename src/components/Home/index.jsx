@@ -3,6 +3,7 @@ import LogoTitle from "../../assets/images/R-Logo.png"
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from '../Logo';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -26,7 +27,7 @@ const Home = () => {
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
 
-                    <img src={LogoTitle} alt="My name" />
+                    <img src={LogoTitle} alt="R" />
 
                     <AnimatedLetters letterClass={letterClass}
                         strArray={nameArray}
@@ -41,7 +42,7 @@ const Home = () => {
                 <h2>Full-Stack Developer / Programmer / Student</h2>
                 <Link to='/contact' className='flat-button'>Contact Me</Link>
             </div>
-
+            <Logo />
         </div>
     );
 };
