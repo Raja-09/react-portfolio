@@ -9,6 +9,8 @@
     left: auto;
     margin: auto;
     opacity: 0;
+    animation: rollIn 1s 1s;
+    animation-fill-mode: forwards;
 
     svg{
         width: 100%;

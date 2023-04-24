@@ -2,7 +2,7 @@ import './index.scss';
 import LogoR from '../../assets/images/R-Logo.png'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap-trial';
-import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin';
+// import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin';
 
 const Logo = () => {
 
@@ -12,26 +12,26 @@ const Logo = () => {
 
 
     useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin);
+        // gsap.registerPlugin(DrawSVGPlugin);
         gsap.timeline()
             .to(bgRef.current, {
                 duration: 1,
                 opacity: 1
             })
-            .fromTo(outLineLogoRef.current, {
-                drawSVG: '0%',
+            // .fromTo(outLineLogoRef.current, {
+            //     drawSVG: '0%',
 
-            }, {
-                drawSVG: '100%',
-                duration: 14
-            })
+            // }, {
+            //     drawSVG: '100%',
+            //     duration: 14
+            // })
 
         gsap.fromTo(
             solidLogoRef.current, {
             opacity: 0,
         }, {
             opacity: 1,
-            delay: 4,
+            delay: 2,
             duration: 4
         }
         )

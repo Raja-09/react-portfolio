@@ -19,7 +19,10 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(
-
+            'service_gpunyrq',
+            'template_pa222hl',
+            refForm.current,
+            'x161Xj2zQHOSj3tai'
 
         ).then(() => {
             alert('Your message has been received! Thank you');
