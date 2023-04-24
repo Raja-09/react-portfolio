@@ -27,13 +27,13 @@ const Sidebar = () => (
         </nav>
         <ul>
             <li>
-                <a target='_blank' href="">
+                <a target='_blank' href="https://www.linkedin.com/in/raja-aravindha-594686196/" rel="noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} />
                 </a>
-                <a target='_blank' href="">
+                <a target='_blank' href="https://github.com/Raja-09" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
-                <a target='_blank' href="">
+                <a target='_blank' href="https://twitter.com/Rajawastaken" rel="noreferrer">
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
             </li>

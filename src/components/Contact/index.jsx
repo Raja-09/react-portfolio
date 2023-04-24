@@ -19,14 +19,14 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm(
-            
+
 
         ).then(() => {
-            alert('Message sent');
+            alert('Your message has been received! Thank you');
             window.location.reload(false);
         },
             () => {
-                alert("Failsed to send message");
+                alert("Failed to send message!! Try again");
             })
     }
     return (
@@ -39,8 +39,9 @@ const Contact = () => {
                     </h1>
 
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, asperiores nostrum? Voluptate laudantium illum harum aut asperiores, vitae perferendis corrupti recusandae sit quis ad aspernatur impedit iusto amet error. Et.
+                        Hey there!👋 Thank you for taking the time to visit my website. If you would like to get in touch with me, please feel free to reach out to me by filling out the below form with your personal details and I will get back to you as soon as possible.
                     </p>
+                    <p>You can also reach out to me directly with the provided email address along with my details.</p>
                     <div className="contact-form">
                         <form action="" ref={refForm} onSubmit={sendEmail}>
                             <ul>
