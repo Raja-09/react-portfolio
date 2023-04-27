@@ -4,6 +4,7 @@ import Layout from './components/layout';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Mywork from './components/Mywork';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path='contact' element={<Contact />} />
         </Route>
+        <Route path='mywork' element={<Mywork />} />
       </Routes>
     </>
   );

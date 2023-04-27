@@ -1,0 +1,57 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  margin-bottom: -15px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  color: darkslategrey;
+  border-radius: 5px;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px lightyellow;
+    img {
+      animation: flipOutX 0.7s 0.5s;
+      animation-fill-mode: forwards;
+    }
+  }
+  div {
+    position: fixed;
+    font-family: "Helvetica Neue";
+    color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 400px;
+    margin: 20px;
+    font-size: 14px;
+  }
+  img {
+    z-index: 1000;
+    border-radius: 10px;
+    width: 400px;
+  }
+  span {
+    font-family: "Coolvetica";
+    color: yellow;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 140px;
+    text-align: center;
+  }
+  opacity: 0;
+  animation: backInUp 1s;
+  animation-fill-mode: forwards;
+}
+@for $i from 1 through 40 {
+  ._#{$i} {
+    animation-delay: #{$i/10}s;
+  }
+}

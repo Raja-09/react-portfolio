@@ -41,7 +41,8 @@
   }
 
   .about-page,
-  .contact-page {
+  .contact-page,
+  .my-work {
     .text-zone {
       position: absolute;
       left: 10%;
@@ -94,7 +95,7 @@
         opacity: 0.8;
         min-width: fit-content;
         animation: pulse 1s;
-        span{
+        span {
           color: yellow;
           font-size: 13px;
         }
@@ -108,9 +109,8 @@
         &:nth-of-type(3) {
           animation-delay: 1.3s;
         }
-        
       }
-      h2{
+      h2 {
         font-size: 33px;
         font-family: "Coolvetica";
         color: yellow;
